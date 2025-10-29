@@ -1,0 +1,12 @@
+name: dev Update
+
+on:
+  pull_request_labeled:
+    labels: ['dev-update']
+
+jobs:
+  update_development:
+    name: Update development Channel
+    type: update
+    params:
+      channel: development

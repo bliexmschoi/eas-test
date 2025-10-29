@@ -1,8 +1,8 @@
 name: Build
 
 on:
-  push:
-    branches: ['dev']
+  pull_request_labeled:
+    labels: ['dev-build']
 
 jobs:
   build_android:
